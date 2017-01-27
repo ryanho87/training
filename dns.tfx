@@ -1,0 +1,12 @@
+
+provider "dnsimple" {
+  email    = "key"
+  token = "secret"
+}
+
+resource "dnsimple_record" "dns" {
+domain = "terraform.rocks"
+type = "A"
+name = "anything"
+value = "${aws_instance.web.0.public_ip}"
+}
