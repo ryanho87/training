@@ -60,7 +60,7 @@ resource "aws_instance" "web" {
   tags {
     Identity = "autodesk-beetle"
     Name     = "web ${count.index+1}/${var.webs}"
-    Foo      = "spiderman"
+    Foo      = "batman"
   }
 }
 
