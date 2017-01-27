@@ -70,4 +70,4 @@ output "public_dns" {
 
 output "tags" {
   value = ["${aws_instance.web.*.tags}"]
-
+}
